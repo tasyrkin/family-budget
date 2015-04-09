@@ -12,5 +12,10 @@ object Application extends Controller {
   def main = Action {
     Ok(views.html.main("Hello, world!")(Html("""<div id="1">This is a sample content</div>""")))
   }
+  
+  def createDb = Action {
+    persistence.Db
+    Ok("DB is created")
+  }
 
 }

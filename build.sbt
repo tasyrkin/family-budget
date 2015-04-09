@@ -10,5 +10,7 @@ libraryDependencies ++= Seq(
   jdbc,
   anorm,
   cache,
-  ws
+  ws,
+  "org.sorm-framework" % "sorm" % "0.3.8",
+  "com.h2database" % "h2" % "1.3.168"
 )
