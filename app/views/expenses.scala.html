@@ -1,3 +1,5 @@
+@import model.Expense
+@(expenses: Seq[Expense])
 
 <!DOCTYPE html>
 
@@ -6,6 +8,6 @@
         <title>Expenses</title>
     </head>
     <body>
-        List of expenses:
+        Expenses (@expenses.length)
     </body>
 </html>

@@ -10,6 +10,7 @@ GET        /welcome             controllers.Application.welcome
 GET        /createdb            controllers.Admin.createDb
 
 # Expenses
+GET        /expenses/:id        controllers.Expenses.show(id: Long)
 GET        /expenses            controllers.Expenses.list
 
 # Map static resources from the /public folder to the /assets URL path
