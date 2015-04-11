@@ -10,6 +10,7 @@ GET        /welcome             controllers.Application.welcome
 GET        /createdb            controllers.Admin.createDb
 
 # Expenses
+GET        /createsample        controllers.Expenses.createSample
 GET        /expenses/:id        controllers.Expenses.show(id: Long)
 GET        /expenses            controllers.Expenses.list
 

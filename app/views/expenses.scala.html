@@ -9,5 +9,10 @@
     </head>
     <body>
         Expenses (@expenses.length)
+        <ul>
+        @expenses.map { expense =>
+            <li>@expense.value</li>
+        }
+        </ul>
     </body>
 </html>
