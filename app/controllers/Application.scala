@@ -5,17 +5,12 @@ import play.twirl.api.Html
 
 object Application extends Controller {
 
-  def index = Action {
-    Ok(views.html.index("Your new application is ready."))
+  def welcome = Action {
+    Ok(views.html.index("Welcome to the Family Budget build with Play and Scala"))
   }
 
-  def main = Action {
-    Ok(views.html.main("Hello, world!")(Html("""<div id="1">This is a sample content</div>""")))
-  }
-  
-  def createDb = Action {
-    persistence.Db
-    Ok("DB is created")
+  def heartbeat = Action {
+    Ok(views.html.main("Heartbeat")(Html("""200 OK""")))
   }
 
 }
