@@ -13,4 +13,6 @@ libraryDependencies ++= Seq(
   "com.h2database" % "h2" % "1.3.168"
 )
 
+net.virtualvoid.sbt.graph.Plugin.graphSettings
+
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
