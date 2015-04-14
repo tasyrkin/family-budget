@@ -1,7 +1,7 @@
 package persistence
 
 import model.Expense
-import sorm._
+import sorm.{InitMode, Instance, Entity}
 
 object Db extends Instance(
   entities = Set(

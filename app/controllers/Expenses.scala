@@ -24,7 +24,7 @@ object Expenses extends Controller {
   
   def createSample() = Action {
     val sample = Db.save( Expense(10000, new DateTime) )
-    Ok("Sample was created")
+    Ok("Sample was created: " + sample)
   }
 
 }
