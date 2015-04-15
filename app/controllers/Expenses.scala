@@ -15,7 +15,10 @@ object Expenses extends Controller {
   }
 
   def show(id: Long) = Action {
-    Ok(s"Showing expense $id")
+    
+    val expense = Db.query[Expense].whereEqual("id", id).fetchOne()
+    
+    Ok(s"Showing expense: $expense")
   }
 
   def create() = Action {
